@@ -1,0 +1,23 @@
+mkdir Shell
+cd Shell
+touch names.csv
+vim names.csv and insert names: jack, joe, and john
+save file
+groupadd developers to create group call developers
+useradd jack to create user jack
+useradd joe to create user joe
+useradd john to create user john
+next add users to the developers group as follows:-
+sudo usermod -a -G developers jack
+sudo usermod -a -G developers joe
+sudo usermod -a -G developers john
+create key pair for each user.
+change password for each user(passwd jack),(passwd joe),(passwd joe)
+log in as each user and create key pair(ssh-keygen)
+cd .ssh
+touch id_rsa.pub
+vi id_rsa.pub
+touch id_rsa
+vi id_rsa
+save key pairs.
+test users connection with both public and private key.
